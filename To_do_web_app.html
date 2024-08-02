@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>To-Do List</h1>
+        <div class="task-input">
+            <input type="text" id="task-title" placeholder="Task title" required>
+            <input type="datetime-local" id="task-datetime">
+            <button id="add-task-button">Add Task</button>
+        </div>
+        <div class="lists-container">
+            <h2>Lists</h2>
+            <div class="list-input">
+                <input type="text" id="list-title" placeholder="New list name" required>
+                <button id="add-list-button">Add List</button>
+            </div>
+            <ul id="lists">
+                <!-- Lists will be dynamically added here -->
+            </ul>
+        </div>
+        <div class="tasks-container">
+            <h2>Tasks</h2>
+            <ul id="tasks">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
